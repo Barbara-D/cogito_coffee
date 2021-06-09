@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cogito Coffee</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="icon" href="slike/icon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
+    <!-- added favicon -->
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="#home" id="navbar_logo">Cogito Coffee</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home_page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#products" class="navbar__links" id="products_page">Products</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about_page">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#team" class="navbar__links" id="team_page">Team</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <div id="hero__image"></div>
+        </div>
+    </div>
+
+    <!--Products-->
+    <div class="main" id="products">
+        <div class="main__container">
+
+            <div class="main__content">
+                <h2>Explore our range</h2>
+                <p>
+                    Our green coffee beans are transparently sourced from tropical growing regions around the world. <br/>
+                    We purchase them seasonally by specialty coffee traders in Europe, or directly from producers Carlos Montero and Daniela Gutierrez in Tarrazú, Costa Rica. 
+                </p>
+            </div>
+            <!-- removed one level?-->
+            <div class="main__products">
+                <!-- <div class="main__img--container"> -->
+                    <div class="main__img--card">
+                        <img src="slike/aspro.png">
+                        <h3>ASPROCDEGUA COOP</h3>
+                        <h4>white chocolate & berries</h4>
+                    </div>
+                    <div class="main__img--card">
+                        <img src="slike/ruru.png">
+                        <h3>RURU SELVATICO</h3>
+                        <h4>coffee for every occasion</h4>
+                    </div>
+                    <div class="main__img--card">
+                        <img src="slike/chel.png">
+                        <h3>CHELCHELE</h3>
+                        <h4>dark chocolate strong</h4>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="about__container">
+            <div class="main__text">
+                <h1>crafted by us, for you</h1>
+                <p>
+                    The commitment to quality extends from tree to cup: coffee trees must be planted and tended with great care and skill. Coffee cherries should be handpicked at the height of ripeness to ensure proper sugar content.
+                    Processing, whether wet or dry method, must be executed in precisely the right way. Storage, shipment, roasting, cupping, grinding, extraction - each step is vital in order to achieve the best-tasting final cup.
+                </p>    
+            </div>
+            <!-- <img src="slike/section_2.png" class="img_beans"> -->
+            <div class="img_beans"> </div>
+        </div>
+        <!-- <iframe width="720" height="480" src="https://www.youtube.com/embed/hRxdPlEMwts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    </div>
+    <div class="iframe_wrapper">
+        <div class="embed_container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hRxdPlEMwts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
+    </div>
+
+    <!-- team== cards-->
+    <div class="team" id="team">
+        <h2>Meet our team</h2>
+        <div class="team_wrapper">
+            <div class="team_card">
+                <img src="slike/person_martina.jpg">
+                <h3>Martina Dobrovoljec</h3>
+                <h4>Cinematography <br> Web Design</h4>
+            </div>
+
+            <div class="team_card">
+                <img src="slike/person_barbara.jpg">
+                <h3>Barbara Deskar</h3>
+                <h4>Video Editing <br> Web Development</h4>
+            </div>
+
+            <div class="team_card">
+                <img src="slike/person_ivan.jpg">
+                <h3>Ivan Vuković</h3>
+                <h4>Video Editing <br> Web Development</h4>
+            </div>
+        </div>
+    </div>
+
+    <!--footer/ contact-->
+    <div class="footer_container" id="contact">
+        <div class="footer_links">
+            <h2>Let's get in touch</h2>
+            <div class="footer_link-wrapper">
+                <div class="footer_link-items">
+                    <p>Ul. Jurja Žerjavića 7, 10000, Zagreb</p>
+                    <p>info@cogitocoffee.com</p>
+                </div>
+                <div class="footer_link-items">
+                    <form class="footer_form">
+                        <input name="mailus" type="email" placeholder="Email address"/>
+                        <input class="btt_send" type="submit" value="SIGN UP"/>
+                    </form>
+                </div>
+            </div>
+            <p class="footer_rights">© 2021 COGITO COFFEE</p>
+        </div>
+    </div>
+
+
+    <script src="js.js"></script>
+</body>
+</html>
